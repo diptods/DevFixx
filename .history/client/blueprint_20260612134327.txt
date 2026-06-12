@@ -1,0 +1,54 @@
+1. Create React App (Vite)
+    npm create vite@latest client -- --template react
+    cd client
+    npm install
+2. Install Routing
+    npm install react-router-dom
+3. Tailwind CSS
+    Step 1: Install Tailwind and its official Vite plugin : npm install tailwindcss @tailwindcss/vite
+    Step 2: Register the plugin in Vite : 
+        import { defineConfig } from 'vite'
+        import react from '@vitejs/plugin-react'
+        import tailwindcss from '@tailwindcss/vite'
+
+        // https://vite.dev
+        export default defineConfig({
+            plugins: [
+                react(),
+                tailwindcss(), 
+            ],
+        })
+
+4. Animation Tools
+    npm install framer-motion gsap
+5. Smooth Scroll
+    npm install @studio-freight/lenis
+6. Icons
+    npm install lucide-react
+7. Forms
+    npm install react-hook-form zod
+    npm install @hookform/resolvers
+8. API Handling
+    npm install axios
+9. Supabase (Backend-as-a-Service)
+    npm install @supabase/supabase-js
+10. Email Service (Optional but PRO)
+    npm install resend
+11. Analytics (Optional)
+    npm install posthog-js
+
+npm install @hookform/resolvers react-hook-form zod
+
+🚀 AFTER SETUP (IMPORTANT STEPS)
+1. Initialize Git
+    git init
+    git add .
+    git commit -m "DevFixx initial setup"
+
+2. Push to GitHub
+    git branch -M main
+    git remote add origin https://github.com/yourname/devfixx-website.git
+    git push -u origin main
+
+3. Deploy
+    Use:  https://www.vercel.com
